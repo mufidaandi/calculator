@@ -1,0 +1,510 @@
+
+                  Expanded(
+                    child: firstColumnButtons,
+                  ),
+                  Expanded(
+                    child: secondColumnButtons,
+                  ),
+                  Expanded(
+                    child: thirdColumnButtons,
+                  ),
+                  Expanded(
+                    child: fourthColumnButtons,
+                  ),
+                  Expanded(
+                    child: fifthColumnButtons,
+                  ),
+
+
+
+                  Widget firstColumnButtons = Container(
+      child: Column(
+        children: <Widget>[
+          Row(
+            children: <Widget>[
+              RaisedButton(
+                onPressed: _displayAC,
+                child: Text('AC'),
+              ),
+            ],
+          ),
+          Row(
+            children: <Widget>[
+              RaisedButton(
+                onPressed: _displayPlusMinus,
+                child: const Text('+/-'),
+              ),
+            ],
+          ),
+          Row(
+            children: <Widget>[
+              RaisedButton(
+                onPressed: _displayPercentage,
+                child: const Text('%'),
+              ),
+            ],
+          ),
+          Row(
+            children: <Widget>[
+              RaisedButton(
+                onPressed: _displayQuotient,
+                child: const Text('÷'),
+              ),
+            ],
+          ),
+        ],
+      ),
+    );
+    Widget secondColumnButtons = Container(
+      child: Column(
+        children: <Widget>[
+          Row(
+            children: <Widget>[
+              RaisedButton(
+                onPressed: _displayNum7,
+                child: const Text('7'),
+              ),
+            ],
+          ),
+          Row(
+            children: <Widget>[
+              RaisedButton(
+                onPressed: _displayNum8,
+                child: const Text('8'),
+              ),
+            ],
+          ),
+          Row(
+            children: <Widget>[
+              RaisedButton(
+                onPressed: _displayNum9,
+                child: const Text('9'),
+              ),
+            ],
+          ),
+          Row(
+            children: <Widget>[
+              RaisedButton(
+                onPressed: _displayProduct,
+                child: const Text('x'),
+              ),
+            ],
+          ),
+        ],
+      ),
+    );
+    Widget thirdColumnButtons = Container(
+      child: Column(
+        children: <Widget>[
+          Row(
+            children: <Widget>[
+              RaisedButton(
+                onPressed: _displayNum4,
+                child: const Text('4'),
+              ),
+            ],
+          ),
+          Row(
+            children: <Widget>[
+              RaisedButton(
+                onPressed: _displayNum5,
+                child: const Text('5'),
+              ),
+            ],
+          ),
+          Row(
+            children: <Widget>[
+              RaisedButton(
+                onPressed: _displayNum6,
+                child: const Text('6'),
+              ),
+            ],
+          ),
+          Row(
+            children: <Widget>[
+              RaisedButton(
+                onPressed: _displayDifference,
+                child: const Text('-'),
+              ),
+            ],
+          ),
+        ],
+      ),
+    );
+    Widget fourthColumnButtons = Container(
+      child: Column(
+        children: <Widget>[
+          Row(
+            children: <Widget>[
+              RaisedButton(
+                onPressed: _displayNum1,
+                child: const Text('1'),
+              ),
+            ],
+          ),
+          Row(
+            children: <Widget>[
+              RaisedButton(
+                onPressed: _displayNum2,
+                child: const Text('2'),
+              ),
+            ],
+          ),
+          Row(
+            children: <Widget>[
+              RaisedButton(
+                onPressed: _displayNum3,
+                child: const Text('3'),
+              ),
+            ],
+          ),
+          Row(
+            children: <Widget>[
+              RaisedButton(
+                onPressed: _displaySum,
+                child: const Text('+'),
+              ),
+            ],
+          ),
+        ],
+      ),
+    );
+    Widget fifthColumnButtons = Container(
+      child: Column(
+        children: <Widget>[
+          Row(
+            children: <Widget>[
+              RaisedButton(
+                onPressed: _displayNum0,
+                child: const Text('0'),
+              ),
+            ],
+          ),
+          Row(
+            children: <Widget>[
+              RaisedButton(
+                onPressed: _displayNumDot,
+                child: const Text('.'),
+              ),
+            ],
+          ),
+          Row(
+            children: <Widget>[
+              RaisedButton(
+                onPressed: _displayAnswer,
+                child: const Text('='),
+              ),
+            ],
+          ),
+        ],
+      ),
+    );
+
+
+    void _displayNum0() {
+    setState(() {
+      if (_valueDisplay == "0") {
+        _valueDisplay = "0";
+      } else {
+        _valueDisplay += "0";
+      }
+      if (op != "") {
+        b = _valueDisplay as double;
+      } else {
+        a = _valueDisplay as double;
+      }
+    });
+  }
+
+  void _displayNum1() {
+    setState(() {
+      if (_valueDisplay == "0") {
+        _valueDisplay = "1";
+      } else {
+        _valueDisplay += "1";
+      }
+      if (op != "") {
+        b = _valueDisplay as double;
+      } else {
+        a = _valueDisplay as double;
+      }
+    });
+  }
+
+  void _displayNum2() {
+    setState(() {
+      if (_valueDisplay == "0") {
+        _valueDisplay = "2";
+      } else {
+        _valueDisplay += "2";
+      }
+      if (op != "") {
+        b = _valueDisplay as double;
+      } else {
+        a = _valueDisplay as double;
+      }
+    });
+  }
+
+  void _displayNum3() {
+    setState(() {
+      if (_valueDisplay == "0") {
+        _valueDisplay = "3";
+      } else {
+        _valueDisplay += "3";
+      }
+      if (op != "") {
+        b = _valueDisplay as double;
+      } else {
+        a = _valueDisplay as double;
+      }
+    });
+  }
+
+  void _displayNum4() {
+    setState(() {
+      if (_valueDisplay == "0") {
+        _valueDisplay = "4";
+      } else {
+        _valueDisplay += "4";
+      }
+      if (op != "") {
+        b = _valueDisplay as double;
+      } else {
+        a = _valueDisplay as double;
+      }
+    });
+  }
+
+  void _displayNum5() {
+    setState(() {
+      if (_valueDisplay == "0") {
+        _valueDisplay = "5";
+      } else {
+        _valueDisplay += "5";
+      }
+      if (op != "") {
+        b = _valueDisplay as double;
+      } else {
+        a = _valueDisplay as double;
+      }
+    });
+  }
+
+  void _displayNum6() {
+    setState(() {
+      if (_valueDisplay == "0") {
+        _valueDisplay = "6";
+      } else {
+        _valueDisplay += "6";
+      }
+      if (op != "") {
+        b = _valueDisplay as double;
+      } else {
+        a = _valueDisplay as double;
+      }
+    });
+  }
+
+  void _displayNum7() {
+    setState(() {
+      if (_valueDisplay == "0") {
+        _valueDisplay = "7";
+      } else {
+        _valueDisplay += "7";
+      }
+      if (op != "") {
+        b = _valueDisplay as double;
+      } else {
+        a = _valueDisplay as double;
+      }
+    });
+  }
+
+  void _displayNum8() {
+    setState(() {
+      if (_valueDisplay == "0") {
+        _valueDisplay = "8";
+      } else {
+        _valueDisplay += "8";
+      }
+      if (op != "") {
+        b = _valueDisplay as double;
+      } else {
+        a = _valueDisplay as double;
+      }
+    });
+  }
+
+  void _displayNum9() {
+    setState(() {
+      if (_valueDisplay == "0") {
+        _valueDisplay = "9";
+      } else {
+        _valueDisplay += "9";
+      }
+      if (op != "") {
+        b = _valueDisplay as double;
+      } else {
+        a = _valueDisplay as double;
+      }
+    });
+  }
+
+  void _displayNumDot() {
+    setState(() {
+      _valueDisplay += ".";
+    });
+  }
+
+  void _displayAC() {
+    setState(() {
+      _valueDisplay = "0";
+    });
+  }
+
+  void _displayPlusMinus() {
+    setState(() {
+      if (_valueDisplay != "0") {
+        a = _valueDisplay as double;
+        a *= -1.0;
+        if (a % a == 0) {
+          intA = a as int;
+          _valueDisplay = "$intA";
+        } else {
+          _valueDisplay = "$a";
+        }
+      }
+    });
+  }
+
+  void _displayPercentage() {
+    setState(() {
+      if (_valueDisplay != "0") {
+        a = _valueDisplay as double;
+        a /= 100.0;
+        _valueDisplay = "$a";
+      }
+    });
+  }
+
+  void _displayQuotient() {
+    setState(() {
+      if (op != "") {
+        b = _valueDisplay as double;
+        if (b != 0.0) {
+          op = "/";
+          ans = a / b;
+          if (ans % ans == 0) {
+            intAns = ans as int;
+            _valueDisplay = "$intAns";
+          } else {
+            _valueDisplay = "$ans";
+          }
+        } else {
+          _valueDisplay = "Not a number";
+        }
+      } else {
+        op = "/";
+        a = _valueDisplay as double;
+      }
+    });
+  }
+
+  void _displaySum() {
+    setState(() {
+      if (op != "") {
+        op = "+";
+        b = _valueDisplay as double;
+        ans = a + b;
+        if (ans % ans == 0) {
+          intAns = ans as int;
+          _valueDisplay = "$intAns";
+        } else {
+          _valueDisplay = "$ans";
+        }
+      } else {
+        op = "+";
+        a = _valueDisplay as double;
+      }
+    });
+  }
+
+  void _displayProduct() {
+    setState(() {
+      if (op != "") {
+        op = "*";
+        b = _valueDisplay as double;
+        ans = a * b;
+        if (ans % ans == 0) {
+          intAns = ans as int;
+          _valueDisplay = "$intAns";
+        } else {
+          _valueDisplay = "$ans";
+        }
+      } else {
+        op = "*";
+        a = _valueDisplay as double;
+      }
+    });
+  }
+
+  void _displayDifference() {
+    setState(() {
+      if (op != "") {
+        op = "-";
+        b = _valueDisplay as double;
+        ans = a - b;
+        if (ans % ans == 0) {
+          intAns = ans as int;
+          _valueDisplay = "$intAns";
+        } else {
+          _valueDisplay = "$ans";
+        }
+      } else {
+        op = "-";
+        a = _valueDisplay as double;
+      }
+    });
+  }
+
+  void _displayAnswer() {
+    setState(() {
+      if (op == "+") {
+        ans = a + b;
+        if (ans % ans == 0) {
+          intAns = ans as int;
+          _valueDisplay = "$intAns";
+        } else {
+          _valueDisplay = "$ans";
+        }
+      }
+      if (op == "-") {
+        ans = a - b;
+        if (ans % ans == 0) {
+          intAns = ans as int;
+          _valueDisplay = "$intAns";
+        } else {
+          _valueDisplay = "$ans";
+        }
+      }
+      if (op == "*") {
+        ans = a * b;
+        if (ans % ans == 0) {
+          intAns = ans as int;
+          _valueDisplay = "$intAns";
+        } else {
+          _valueDisplay = "$ans";
+        }
+      }
+      if (op == "-") {
+        ans = a - b;
+        if (ans % ans == 0) {
+          intAns = ans as int;
+          _valueDisplay = "$intAns";
+        } else {
+          _valueDisplay = "$ans";
+        }
+      }
+    });
+  }
